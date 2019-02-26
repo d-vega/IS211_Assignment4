@@ -96,7 +96,7 @@ def binary_search_recursive(a_list, item):
                                            item)), start, end
 
 
-def search_benchmarker(num):
+def main(num):
     """Search benchmarking docstring"""
     seq_srch_runtime = []
     ord_seq_srch_runtime = []
@@ -152,8 +152,6 @@ def search_benchmarker(num):
     return seq_srch, ord_seq_srch, bin_srch_iter, bin_srch_recur
 
 
-print search_benchmarker(10000)
-#print sequential_search(list_generator(10), -1)
-#print ordered_sequential_search(list_generator(10), -1)
-#print binary_search_iterative(list_generator(10), -1)
-#print binary_search_recursive(list_generator(10), -1)
+print main(500)
+print main(1000)
+print main(10000)
